@@ -196,6 +196,13 @@
       ],
       "value": "5"
     }, {
+      "id": "024266e1-a275-4340-8abf-20afec300607",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/app-root/rz-single-modal-window/div[3]/div[2]/rz-shopping-cart/div/div[1]/div/a",
+      "targets": [],
+      "value": "Оформити замовлення"
+    }, {
       "id": "e8e22e2f-b585-4e70-a088-0e6daada82cf",
       "comment": "",
       "command": "click",
@@ -211,6 +218,397 @@
       "value": ""
     }, {
       "id": "2691492c-bec0-4db9-89cb-9f699be6705c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9fe231f1-98df-419b-b586-76cecdba36de",
+    "name": "Check the availability of Josera feed in the product catalog",
+    "commands": [{
+      "id": "8271bcf7-c97f-4dca-86fa-aa174855d86a",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9b697fe-7067-473b-95ae-5812649a6ef9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x867",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b8cc71c-818d-4b3c-a301-f04ffd5ab5a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Зоотовари",
+      "targets": [
+        ["linkText=Зоотовари", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(13) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Зоотовари')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/zootovary/c3520929/')])[2]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li[13]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "787b2a80-9d4a-4b41-b31f-ad22259dd0f1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.top-widget__categories-item:nth-child(1) .popular-category__title",
+      "targets": [
+        ["css=.top-widget__categories-item:nth-child(1) .popular-category__title", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Корм для тварин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "811848fa-7c46-4fbb-aecd-b4feee271673",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-widget__categories-item:nth-child(1) .popular-category__title",
+      "targets": [
+        ["css=.top-widget__categories-item:nth-child(1) .popular-category__title", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Корм для тварин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d38f7f54-3bd7-49d1-b691-c1069cd70332",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Корми для собак",
+      "targets": [
+        ["linkText=Корми для собак", "linkText"],
+        ["css=.portal-grid__cell:nth-child(2) .tile-cats__heading", "css:finder"],
+        ["xpath=//a[contains(text(),'Корми для собак')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/food_for_dogs/c1461202/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/rz-list-tile/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Корми для собак')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "684ce744-4219-4e08-b0ff-4781a190634c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/app-root/div/div/rz-category/div/main/div[1]/div/h1",
+      "targets": [],
+      "value": "Корми для собак"
+    }, {
+      "id": "11464d6f-7afa-4a7a-b360-280726dbbfe7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.catalog-grid__cell:nth-child(1) .goods-tile__picture > .ng-lazyloaded:nth-child(1)",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__picture > .ng-lazyloaded:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Сухий корм Purina Pro Plan Small&Mini Sensitive Digestion для собак дрібних і карликових порід з чутливою системою травлення зі смаком ягняти']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0406587e-6c18-4d55-8e5d-950bf687ce09",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.goods-tile__picture > .display-none:nth-child(1)",
+      "targets": [
+        ["css=.goods-tile__picture > .display-none:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Сухий корм Purina Pro Plan Small&Mini Sensitive Digestion для собак дрібних і карликових порід з чутливою системою травлення зі смаком ягняти']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "762a30d8-b5bd-4fa1-ae1e-4ee980be2e20",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a5be020-7392-4309-adcf-95904c0520ba",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "josera"
+    }, {
+      "id": "516e0eae-7d0e-4514-97f2-6a2cd8a39f7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcfa4a14-ba9e-4ad6-969b-2086a325a4bb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f814a6a5-e00f-403d-b3a1-a3df2993c627",
+    "name": "Check adding and removing items from the cart",
+    "commands": [{
+      "id": "500a15fe-db9c-4330-a427-b9861b21a2db",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6999376-7838-4454-8272-cf1777b6ac9a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1698x1034",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21de11f2-5dd7-4fdc-85b3-480b18a2746b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Товари для дому",
+      "targets": [
+        ["linkText=Товари для дому", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(5) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Товари для дому')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/tovary-dlya-doma/c2394287/')])[2]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75993785-caa6-476e-b328-914b8c44cbd3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Посуд",
+      "targets": [
+        ["linkText=Посуд", "linkText"],
+        ["css=.ng-star-inserted:nth-child(2) .portal-grid__cell:nth-child(2) .tile-cats__heading", "css:finder"],
+        ["xpath=//a[contains(text(),'Посуд')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/posuda-dlia-kuhni/c4626594/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/rz-list-tile/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Посуд')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5991b9b-d86b-4c7a-8054-af5796f6939f",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/app-root/div/div/rz-super-portal/div/main/section/div[1]/h1",
+      "targets": [],
+      "value": "Посуд для кухні"
+    }, {
+      "id": "2bdb94ba-21e2-4a36-9a96-fd16e33d6e96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-widget__categories-item:nth-child(1) .popular-category__title",
+      "targets": [
+        ["css=.top-widget__categories-item:nth-child(1) .popular-category__title", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Сковороди')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1e97c7c-92da-4978-891b-406e79a9edd2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.catalog-grid__cell:nth-child(3) .goods-tile__title",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(3) .goods-tile__title", "css:finder"],
+        ["xpath=//li[3]/rz-catalog-tile/app-goods-tile-default/div/div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сковорода Tefal Cook Natural')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f580f27-da7a-42b0-ac77-9484df003e8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--green",
+      "targets": [
+        ["css=.button--green", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/rz-product-buy-btn/app-buy-button/button", "xpath:idRelative"],
+        ["xpath=//app-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "396cd454-0600-4da2-9d1f-7dd240946e56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_gray",
+      "targets": [
+        ["css=.button_color_gray", "css:finder"],
+        ["xpath=//rz-shopping-cart/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продовжити покупки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fb3f224-1df2-4d65-8330-40c265cfc273",
+      "comment": "",
+      "command": "click",
+      "target": "css=img:nth-child(3)",
+      "targets": [
+        ["css=img:nth-child(3)", "css:finder"],
+        ["xpath=//img[@alt='Rozetka Logo']", "xpath:img"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cf43557-4a1e-47fc-9feb-334f702930e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-goods:nth-child(1) .main-goods__cell:nth-child(3) img",
+      "targets": [
+        ["css=.main-goods:nth-child(1) .main-goods__cell:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@alt='Велосипед SPARK ROUGH 26-ST-18-ZV-V (Серый с голубым)']", "xpath:img"],
+        ["xpath=//li[3]/rz-app-tile/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b78cd76-227c-41e0-89be-e8ba8661d5e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buy-button__label",
+      "targets": [
+        ["css=.buy-button__label", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/rz-product-buy-btn/app-buy-button/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2122fcf5-e94c-4cb8-a3ad-1f0de4e3cb52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list__item:nth-child(1) .button:nth-child(3)",
+      "targets": [
+        ["css=.cart-list__item:nth-child(1) .button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[63]", "xpath:attributes"],
+        ["xpath=//rz-cart-counter/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc8e6d77-9ce8-48ae-8b9c-360d98d6fe18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list__item:nth-child(1) .button:nth-child(3)",
+      "targets": [
+        ["css=.cart-list__item:nth-child(1) .button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[63]", "xpath:attributes"],
+        ["xpath=//rz-cart-counter/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5f2307-b949-4135-bb8d-718a53dc4bdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list__item:nth-child(2) .button:nth-child(3)",
+      "targets": [
+        ["css=.cart-list__item:nth-child(2) .button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[66]", "xpath:attributes"],
+        ["xpath=//li[2]/rz-cart-product/div/div[2]/rz-cart-counter/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71d636cf-11c8-440a-83fa-9b0f47ef0d0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[60]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bdbb9a0-fb48-496c-8fd9-4b9673038d11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__button--active > svg",
+      "targets": [
+        ["css=.header__button--active > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5312ca55-5380-41d6-b4e0-b6cca9903d2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartProductActions0",
+      "targets": [
+        ["id=cartProductActions0", "id"],
+        ["css=#cartProductActions0", "css:finder"],
+        ["xpath=//button[@id='cartProductActions0']", "xpath:attributes"],
+        ["xpath=//rz-popup-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3405c686-f256-4f5d-bb41-7b69cd9e03f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popup-menu__item .button",
+      "targets": [
+        ["css=.popup-menu__item .button", "css:finder"],
+        ["xpath=(//button[@type='button'])[62]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions0']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c5ff58b-1f5f-429d-a301-e49aa69c14ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartProductActions0",
+      "targets": [
+        ["id=cartProductActions0", "id"],
+        ["css=#cartProductActions0", "css:finder"],
+        ["xpath=//button[@id='cartProductActions0']", "xpath:attributes"],
+        ["xpath=//rz-popup-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af10011f-4652-4195-809b-9376d29ef876",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popup-menu__item .button",
+      "targets": [
+        ["css=.popup-menu__item .button", "css:finder"],
+        ["xpath=(//button[@type='button'])[62]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions0']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01a97686-63b8-4a07-9001-48948a1d5229",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[60]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "293c37a2-b447-4bac-a6e3-53f899f1fb52",
       "comment": "",
       "command": "close",
       "target": "",
