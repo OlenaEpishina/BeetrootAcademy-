@@ -1,0 +1,231 @@
+{
+  "id": "b4e06ddb-d4c5-43dc-8344-cfb4ccc19718",
+  "version": "2.0",
+  "name": "rozetka",
+  "url": "https://rozetka.com.ua/ua",
+  "tests": [{
+    "id": "5492374d-390a-4265-b4df-93d510730894",
+    "name": "checking the availability of the email",
+    "commands": [{
+      "id": "8ea86e5d-1d5f-49f4-ab60-4ed60ddac0e9",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "deb2aed1-f3b9-41df-b48e-5269db27f47e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1698x1034",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9c575ab-568f-4141-ba31-9f0f56a9f8cf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1067)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6e2e234-5bf8-4b38-98c7-c36930d379dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Оренда приміщень",
+      "targets": [
+        ["linkText=Оренда приміщень", "linkText"],
+        ["css=.ng-tns-c31-3:nth-child(4) .ng-tns-c31-3:nth-child(4) > .ng-tns-c31-3", "css:finder"],
+        ["xpath=//a[contains(text(),'Оренда приміщень')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/news-articles-promotions/promotions/store_search/')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Оренда приміщень')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04aea38c-d735-4e17-950f-f0673a774942",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[text()='arenda@rozetka.com.ua']",
+      "targets": [],
+      "value": "arenda@rozetka.com.ua"
+    }, {
+      "id": "27bf114c-ea59-4de4-9c0d-8f0511578751",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,267)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f72062fc-0c9c-4719-a06b-9cf07586f7ff",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c1ea108a-112e-4a0a-b303-bf05f70eadff",
+    "name": "add product to cart",
+    "commands": [{
+      "id": "42fa9d61-2c98-4041-9397-cb537798f9cd",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a07212aa-dc40-445d-82c5-8d2e71ff2d53",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1698x1034",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f54d80d-e5ec-4528-aba2-cd9ba23aa70b",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb90ea2e-65a4-4844-8703-e0f61c7315dd",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "кобзар"
+    }, {
+      "id": "c87b3b2a-c2e7-408f-8ba0-a154f5261621",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e84deaeb-92bd-4b1f-acc3-c3186e958ddd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.catalog-grid__cell:nth-child(1) .goods-tile__title",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Кобзар. Вибрана поезія - Т. Г. Шевченко (9789669829962)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b011df0-8751-4bdf-a479-ce5c6e7e3d5e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,347)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff8cf78d-db14-4a08-9d34-0874b2f964ac",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68f8126e-f3a1-4ba6-9e9d-d3dfa7103898",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buy-button__label",
+      "targets": [
+        ["css=.buy-button__label", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/rz-product-buy-btn/app-buy-button/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaff6560-9456-490c-b98f-5ba13f33bed0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[84]", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d4d5532-7bf3-4a1c-adee-644283257339",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[84]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1287e67-e15f-4a71-aa84-d81e664e478b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-counter",
+      "targets": [
+        ["css=.cart-counter", "css:finder"],
+        ["xpath=//rz-cart-counter/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "879ecbe5-fd7a-414b-b41b-d881dc344777",
+      "comment": "",
+      "command": "type",
+      "target": "css=.cart-counter__input",
+      "targets": [
+        ["css=.cart-counter__input", "css:finder"],
+        ["xpath=//rz-cart-counter/div/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "e8e22e2f-b585-4e70-a088-0e6daada82cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Оформити замовлення",
+      "targets": [
+        ["linkText=Оформити замовлення", "linkText"],
+        ["css=.button_size_large", "css:finder"],
+        ["xpath=//a[contains(text(),'Оформити замовлення')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/checkout/')]", "xpath:href"],
+        ["xpath=//rz-shopping-cart/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Оформити замовлення')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2691492c-bec0-4db9-89cb-9f699be6705c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c4d5bb79-3b48-412b-8d45-709d43c22c01",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://rozetka.com.ua/", "https://rozetka.com.ua/ua"],
+  "plugins": []
+}

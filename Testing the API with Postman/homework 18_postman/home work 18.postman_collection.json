@@ -1,0 +1,483 @@
+{
+	"info": {
+		"_postman_id": "c81353af-ea69-475f-9d5d-4ebdf935cbdd",
+		"name": "home work 18",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26589462"
+	},
+	"item": [
+		{
+			"name": "first level tasks_homework 18",
+			"item": [
+				{
+					"name": "checks with invalid data",
+					"item": [
+						{
+							"name": "CREATE user with invalid name",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"12345\",\r\n  \"age\": \"90\",\r\n  \"gender\": \"male\",\r\n  \"city\": \"Babylon\"\r\n} \r\n   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET user with invalid data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EDIT user with invalid data",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \" \" \r\n  \"name\": \"volodymyr\",\r\n  \"age\": 90,\r\n  \"gender\": \"male\",\r\n  \"city\": \"Babylon\"\r\n} \r\n ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELITE user with invalid data",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE user with invalid age",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"volodymyr\",\r\n  \"age\": \"101\",\r\n  \"gender\": \"male\",\r\n  \"city\": \"Babylon\"\r\n} \r\n   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE user with an empty field gender",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Volodymyr\",\r\n  \"age\": \"90\",\r\n  \"gender\": \" \",\r\n  \"city\": \"Babylon\"\r\n} \r\n   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "checks with valid data",
+					"item": [
+						{
+							"name": "CREATE user with valid data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"volodymyr\",\r\n  \"age\": 90,\r\n  \"gender\": \"male\",\r\n  \"city\": \"Babylon\"\r\n} \r\n   \r\n     \r\n\r\n    \r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET user with valid data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=2fd89b26-b8de-4a83-a8d7-a45e946012c1",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2fd89b26-b8de-4a83-a8d7-a45e946012c1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EDIT user with valid data",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"2fd89b26-b8de-4a83-a8d7-a45e946012c1\",\r\n  \"name\": \"volodymyr\",\r\n  \"age\": 90,\r\n  \"gender\": \"male\",\r\n  \"city\": \"Kyiv\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE user with valid data",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=2b776d1e-d2fe-4de8-9891-195f6d92a167",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2b776d1e-d2fe-4de8-9891-195f6d92a167"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "second level tasks_homework 18",
+			"item": [
+				{
+					"name": "checks with valid data",
+					"item": [
+						{
+							"name": "CREATE user with valid data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"elizabeth\",\r\n  \"age\": 14,\r\n  \"gender\": \"female\",\r\n  \"city\": \"Kyiv\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE user with valid data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=202e3fcb-ce36-44ba-be69-862798b05e48",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "202e3fcb-ce36-44ba-be69-862798b05e48"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EDIT user with valid data",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"id\": \"202e3fcb-ce36-44ba-be69-862798b05e48\", \r\n  \"name\": \"elizabeth\",\r\n  \"age\": 14,\r\n  \"gender\": \"female\",\r\n  \"city\": \"Babylon\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE user with valid data",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=202e3fcb-ce36-44ba-be69-862798b05e48",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "202e3fcb-ce36-44ba-be69-862798b05e48"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "checks with invalid data",
+					"item": []
+				}
+			]
+		}
+	]
+}
